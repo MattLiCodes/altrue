@@ -10,7 +10,7 @@ import axios from "axios";
 import Block from "../components/Block";
 import { AntDesign } from "@expo/vector-icons";
 
-export default class SelectScreen extends React.Component {
+export default class EditSelectScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -44,7 +44,7 @@ export default class SelectScreen extends React.Component {
       <View style={styles.container}>
         <Text style={styles.textContainer}>My Treatments</Text>
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate("AddBlockScreen")}
+          onPress={() => this.props.navigation.navigate("EditBlockScreen")}
         >
           <AntDesign
             name="edit"
